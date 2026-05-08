@@ -991,11 +991,23 @@
         z-index: 200;
         gap: 0;
       }
-      .nav-toggle:checked ~ .nav-links li { width: 100%; }
+      .nav-toggle:checked ~ .nav-links li { width: 100%; list-style: none; }
       .nav-toggle:checked ~ .nav-links a {
         padding: 14px 22px;
         width: 100%;
+        font-size: 1rem;
+        color: var(--p);
+        background: transparent !important;
+        border-radius: 0;
+        font-weight: 500;
+        letter-spacing: 0;
+        box-shadow: none;
+        gap: 8px;
+        justify-content: flex-start;
+        min-height: 48px;
       }
+      .nav-toggle:checked ~ .nav-links a:hover { background: var(--bg) !important; color: var(--a) !important; }
+      .nav-toggle:checked ~ .nav-links .nav-phone svg { color: var(--a); }
       .hero { padding: 64px 0 56px; }
       .footer-grid { grid-template-columns: 1fr; gap: 32px; }
       .strip-grid { grid-template-columns: 1fr 1fr; }
