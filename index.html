@@ -960,8 +960,21 @@
     }
 
     .nav-burger { display: none; }
+    .nav-phone-mobile { display: none; }
     @media (max-width: 680px) {
       .nav-links { display: none; }
+      .nav-phone-mobile {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: var(--a) !important;
+        padding: 6px 10px;
+        white-space: nowrap;
+        text-decoration: none;
+        min-height: 44px;
+      }
       .nav-burger {
         display: inline-flex;
         align-items: center;
@@ -1045,6 +1058,7 @@
             </a>
           </li>
         </ul>
+        <a href="tel:+3612504241" class="nav-phone-mobile">📞 +36 1 250 4241</a>
         <label for="nav-toggle" class="nav-burger" aria-label="Menü megnyitása">☰</label>
       </div>
     </div>
