@@ -7,7 +7,7 @@
   <meta name="description" content="A Kéhli Vendéglő 1899 óta kínál autentikus magyar ételeket a III. kerületben. Látogasson el hozzánk Budán, a Mókus utcán! Asztalfoglalás: +36 1 250 4241.">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#101F26">
-  <link rel="canonical" href="https://iii-ker-let-etterem.hu/">
+  <link rel="canonical" href="https://www.iii-ker-let-etterem.hu/">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -23,7 +23,7 @@
   <meta property="og:type" content="restaurant">
   <meta property="og:title" content="Kéhli Vendéglő – III. kerületi étterem">
   <meta property="og:description" content="1899 óta tradicionális magyar konyha a III. kerületben. Legendás hangulat, autentikus receptek, Mókus utca 22.">
-  <meta property="og:url" content="https://iii-ker-let-etterem.hu/">
+  <meta property="og:url" content="https://www.iii-ker-let-etterem.hu/">
   <meta property="og:site_name" content="Kéhli Vendéglő">
   <meta property="og:locale" content="hu_HU">
   <meta property="og:image" content="https://iii-ker-let-etterem.hu/favicon.svg">
@@ -34,11 +34,38 @@
   <meta name="twitter:description" content="1899 óta tradicionális magyar konyha a III. kerületben. Legendás hangulat, autentikus receptek.">
   <meta name="twitter:image" content="https://iii-ker-let-etterem.hu/favicon.svg">
 
-  <!-- JSON-LD: Restaurant -->
+  <!-- JSON-LD: WebSite + Organization + Restaurant + ItemList -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.iii-ker-let-etterem.hu/#website",
+        "url": "https://www.iii-ker-let-etterem.hu/",
+        "name": "Kéhli Vendéglő – III. kerületi étterem",
+        "description": "Tradicionális magyar étterem 1899 óta a budapesti III. kerületben.",
+        "inLanguage": "hu-HU",
+        "publisher": {"@id": "https://www.iii-ker-let-etterem.hu/#organization"}
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://www.iii-ker-let-etterem.hu/#organization",
+        "name": "Kéhli Vendéglő",
+        "url": "https://www.iii-ker-let-etterem.hu/",
+        "logo": {"@type": "ImageObject", "url": "https://www.iii-ker-let-etterem.hu/favicon.svg"},
+        "telephone": "+36-1-250-4241",
+        "email": "postmaster@kehli.t-online.hu",
+        "foundingDate": "1899",
+        "sameAs": [
+          "https://www.facebook.com/Kehlivendeglo/",
+          "https://www.instagram.com/kehli_vendeglo/",
+          "https://kehli.hu/"
+        ]
+      },
+      {
     "@type": "Restaurant",
+    "@id": "https://www.iii-ker-let-etterem.hu/#restaurant",
     "name": "Kéhli Vendéglő",
     "description": "Tradicionális magyar vendéglő 1899 óta a budapesti III. kerületben, legendás hangulattal és autentikus receptekkel.",
     "url": "https://kehli.hu/",
@@ -69,7 +96,27 @@
     ],
     "sameAs": [
       "https://www.facebook.com/Kehlivendeglo/",
-      "https://www.instagram.com/kehli_vendeglo/"
+      "https://www.instagram.com/kehli_vendeglo/",
+      "https://kehli.hu/"
+    ],
+    "areaServed": [
+      {"@type": "AdministrativeArea", "name": "Budapest III. kerület"},
+      {"@type": "Place", "name": "Óbuda"}
+    ],
+    "image": {"@type": "ImageObject", "url": "https://www.iii-ker-let-etterem.hu/favicon.svg"}
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://www.iii-ker-let-etterem.hu/#menu",
+        "name": "Kéhli Vendéglő – tradicionális magyar fogások",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "item": {"@type": "MenuItem", "name": "Klasszikus gulyásleves", "description": "Friss alapanyagokból, hagyományos recept szerint főzve."}},
+          {"@type": "ListItem", "position": 2, "item": {"@type": "MenuItem", "name": "Marha- és borjúpörkölt", "description": "Régi magyar receptek alapján, finom paprikás szafttal."}},
+          {"@type": "ListItem", "position": 3, "item": {"@type": "MenuItem", "name": "Töltött káposzta", "description": "A Krúdy-kor hagyományait idéző klasszikus, házias változat."}},
+          {"@type": "ListItem", "position": 4, "item": {"@type": "MenuItem", "name": "Friss halételek", "description": "Szezonális halfogások, magyar borvidékek bortérképével párosítva."}},
+          {"@type": "ListItem", "position": 5, "item": {"@type": "Service", "name": "Privát rendezvények", "description": "Céges vacsorák, születésnapok, esküvők személyre szabott menüvel."}}
+        ]
+      }
     ]
   }
   </script>
@@ -79,6 +126,7 @@
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "@id": "https://www.iii-ker-let-etterem.hu/#faq",
     "mainEntity": [
       {
         "@type": "Question",
