@@ -121,7 +121,8 @@
     "sameAs": [
       "https://www.facebook.com/Kehlivendeglo/",
       "https://www.instagram.com/kehli_vendeglo/",
-      "https://kehli.hu/"
+      "https://kehli.hu/",
+      "https://www.google.com/maps/place/K%C3%A9hli+Vend%C3%A9gl%C5%91/@47.5378851,19.0408607,17z/data=!3m1!4b1!4m6!3m5!1s0x4741d95eed95a9fd:0x9aeaac2e9feb5e73!8m2!3d47.5378851!4d19.0434356!16s%2Fg%2F1wcxbw7y"
     ],
     "areaServed": [
       {"@type": "AdministrativeArea", "name": "Budapest III. kerület"},
@@ -921,6 +922,29 @@
     }
     .skip-link:focus { left: 16px; }
 
+    .google-review-banner {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 11px 22px;
+      background: #fff;
+      border: 1.5px solid var(--border);
+      border-radius: 100px;
+      text-decoration: none !important;
+      font-size: 0.95rem;
+      margin-top: 14px;
+      box-shadow: var(--shadow-card);
+      transition: all .2s ease;
+    }
+    .google-review-banner:hover {
+      border-color: var(--a);
+      transform: translateY(-1px);
+    }
+    .grb-stars { color: #f4a800; letter-spacing: 1.5px; font-size: 1rem; }
+    .grb-rating { font-weight: 800; color: var(--p); }
+    .grb-text { color: var(--text-muted); }
+    .grb-arrow { color: var(--a); font-weight: 700; }
+
     /* ===================== RESPONSIVE ===================== */
     @media (max-width: 900px) {
       .about-inner { grid-template-columns: 1fr; gap: 40px; }
@@ -1091,6 +1115,12 @@
         <div class="section-header">
           <span class="section-eyebrow">Vendégeink mondták</span>
           <h2 class="section-title" id="reviews-title">Igazi vendégélmények</h2>
+          <a href="https://www.google.com/maps/place/K%C3%A9hli+Vend%C3%A9gl%C5%91/@47.5378851,19.0408607,17z/data=!3m1!4b1!4m6!3m5!1s0x4741d95eed95a9fd:0x9aeaac2e9feb5e73!8m2!3d47.5378851!4d19.0434356!16s%2Fg%2F1wcxbw7y" target="_blank" rel="noopener" class="google-review-banner" aria-label="Kéhli Vendéglő Google vélemények">
+            <span class="grb-stars">★★★★★</span>
+            <span class="grb-rating">4.6</span>
+            <span class="grb-text">· 4716 vélemény Google-ön</span>
+            <span class="grb-arrow">→</span>
+          </a>
         </div>
         <div class="reviews-grid">
           <div class="review-card">
