@@ -959,9 +959,10 @@
       .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
     }
 
-    .nav-burger { display: none; }
-    @media (max-width: 680px) {
+    .nav-burger { display: none; order: 99; }
+    @media (max-width: 768px) {
       .nav-links { display: none; }
+      .nav-phone { display: none !important; }
       .nav-burger {
         display: inline-flex;
         align-items: center;
@@ -975,7 +976,6 @@
         min-height: 44px;
         min-width: 44px;
         border-radius: 8px;
-        order: 99;
       }
       .nav-toggle:checked ~ .nav-links {
         display: flex !important;
