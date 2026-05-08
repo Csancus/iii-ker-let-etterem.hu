@@ -8,6 +8,7 @@
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#101F26">
   <link rel="canonical" href="https://xn--iii-kerlet-etterem-s6b.hu/">
+  <link rel="preload" as="image" href="/hero.webp" fetchpriority="high">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -26,13 +27,15 @@
   <meta property="og:url" content="https://xn--iii-kerlet-etterem-s6b.hu/">
   <meta property="og:site_name" content="Kéhli Vendéglő">
   <meta property="og:locale" content="hu_HU">
-  <meta property="og:image" content="https://xn--iii-kerlet-etterem-s6b.hu/favicon.svg">
+  <meta property="og:image" content="https://xn--iii-kerlet-etterem-s6b.hu/hero.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="600">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Kéhli Vendéglő – III. kerületi étterem">
   <meta name="twitter:description" content="1899 óta tradicionális magyar konyha a III. kerületben. Legendás hangulat, autentikus receptek.">
-  <meta name="twitter:image" content="https://xn--iii-kerlet-etterem-s6b.hu/favicon.svg">
+  <meta name="twitter:image" content="https://xn--iii-kerlet-etterem-s6b.hu/hero.jpg">
 
   <!-- JSON-LD: WebSite + Organization + Restaurant + ItemList -->
   <script type="application/ld+json">
@@ -128,7 +131,7 @@
       {"@type": "AdministrativeArea", "name": "Budapest III. kerület"},
       {"@type": "Place", "name": "Óbuda"}
     ],
-    "image": {"@type": "ImageObject", "url": "https://xn--iii-kerlet-etterem-s6b.hu/favicon.svg"}
+    "image": {"@type": "ImageObject", "url": "https://xn--iii-kerlet-etterem-s6b.hu/hero.jpg", "width": 1200, "height": 600}
       },
       {
         "@type": "ItemList",
@@ -316,6 +319,15 @@
       padding: 96px 0 88px;
       text-align: center;
     }
+    .hero-image {
+      margin: 48px auto 0;
+      max-width: 960px;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 14px 44px rgba(16,31,38,.18);
+      aspect-ratio: 1200 / 600;
+    }
+    .hero-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
     .hero-eyebrow {
       display: inline-block;
@@ -1045,6 +1057,20 @@
             Foglaljon asztalt most
           </a>
           <a href="https://kehli.hu/etlap" target="_blank" rel="noopener" class="btn btn-outline">Tovább az étlapra</a>
+        </div>
+        <div class="hero-image">
+          <picture>
+            <source srcset="/hero.webp" type="image/webp">
+            <img
+              src="/hero.jpg"
+              alt="Kéhli Vendéglő – tradicionális magyar étterem 1899 óta, Budapest III. kerület, Mókus utca"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
+              width="1200"
+              height="600"
+            />
+          </picture>
         </div>
       </div>
     </section>
