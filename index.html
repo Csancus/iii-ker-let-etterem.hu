@@ -1007,8 +1007,22 @@
         min-height: 48px;
       }
       .nav-toggle:checked ~ .nav-links a:hover { background: var(--bg) !important; color: var(--a) !important; }
-      .nav-toggle:checked ~ .nav-links .nav-phone { display: block !important; color: var(--a) !important; font-weight: 700 !important; }
-      .nav-toggle:checked ~ .nav-links .nav-phone svg { stroke: var(--a); }
+      .nav-toggle:checked ~ .nav-links .nav-phone {
+        display: flex !important;
+        align-items: center;
+        gap: 8px;
+        color: var(--a) !important;
+        font-weight: 700 !important;
+        background: transparent !important;
+        border-radius: 0 !important;
+        padding: 14px 22px !important;
+        min-height: 48px;
+        width: 100% !important;
+        font-size: 1rem !important;
+        border-top: 1px solid rgba(0,0,0,.07);
+        margin-top: 4px;
+      }
+      .nav-toggle:checked ~ .nav-links .nav-phone svg { stroke: var(--a); display: inline-block; flex-shrink: 0; }
       .hero { padding: 64px 0 56px; }
       .footer-grid { grid-template-columns: 1fr; gap: 32px; }
       .strip-grid { grid-template-columns: 1fr 1fr; }
